@@ -11,3 +11,12 @@ packages:
     paths:
       libgpg-error@1.36: /usr
     buildable: false
+  boost:
+    paths:
+      boost@1.73.0 +context cxxstd=14: /usr
+    buildable: false
+  libseccomp:
+    paths:
+      libseccomp@2.5.0: /usr
+    buildable: false
+

@@ -1,2 +1,4 @@
 config:
   install_tree: /opt/spack-root
+  build_stage:
+  - /mnt/vms0/spack-stage
