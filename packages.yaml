@@ -1,22 +1,31 @@
 packages:
   openssl:
-    paths:
-      openssl@1.1.1g: /usr
     buildable: false
+    externals:
+    - spec: openssl@1.1.1g
+      prefix: /usr
   ncurses:
-    paths:
-      ncurses@6.2.20200212: /usr
     buildable: false
+    externals:
+    - spec: "ncurses"
+      prefix: "/usr"
   libgpg-error:
-    paths:
-      libgpg-error@1.36: /usr
     buildable: false
+    externals:
+    - spec: "libgpg-error"
+      prefix: "/usr"
   boost:
-    paths:
-      boost@1.73.0 +context cxxstd=14: /usr
     buildable: false
+    externals:
+    - spec: "boost"
+      prefix: "/usr"
   libseccomp:
-    paths:
-      libseccomp@2.5.0: /usr
     buildable: false
+    externals:
+    - spec: "libseccomp"
+      prefix: "/usr"
+  libmicrohttpd: 
+    externals:
+    - spec: libmicrohttpd@0.9.71
+      prefix: /usr
 
